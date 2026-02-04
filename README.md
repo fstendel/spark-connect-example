@@ -7,6 +7,8 @@ This project starts a spark cluster setup consisting of:
 using docker compose.
 
 The compose file can be run using `docker compose up -d`.
+If you want to run it with more than one worker node, you can alternatively use `docker compose up -d --scale spark-worker=4` to
+run with up to 4 worker nodes.
 
 
 UIs are exposed via the ports outlined in the docker-compose file. 
